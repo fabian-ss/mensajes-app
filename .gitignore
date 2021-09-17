@@ -13,4 +13,5 @@ web-build/
 .DS_Store
 
 # Extras
-Anotaciones.txt
+Anotaciones.txt  
+firebase.js
