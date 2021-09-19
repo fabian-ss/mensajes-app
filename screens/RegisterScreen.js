@@ -26,7 +26,7 @@ const RegisterScreen = ({navigation}) => {
                 displayName: name,
                 photoURL: 
                 imageUrl ||
-                "https://cencup.com/wp-content/uploads/2019/07/avatar-placeholder.png",
+                "https://cdn2.melodijolola.com/media/files/pareja_conejos_1.jpg",
             })
 
         })
@@ -71,7 +71,7 @@ const RegisterScreen = ({navigation}) => {
                  />
             </View>
 
-            <Button raised onPress={register} title="Crear Usuario"/>
+            <Button raised onPress={register} title="Crear Cuenta"/>
             <View style={{ height:100 }}/> 
         </KeyboardAvoidingView>
         

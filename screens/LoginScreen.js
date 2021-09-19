@@ -21,8 +21,10 @@ const LoginScreen = ({navigation}) => {
         return unsuscribe;
     }, [])
 
-    const sigIn = ()=>{
-
+    const signIn = ()=>{
+        auth.
+        signInWithEmailAndPassword(email,password)
+        .catch(error => alert(error))
     }
 
     return (
@@ -51,11 +53,12 @@ const LoginScreen = ({navigation}) => {
                  type="password"
                  value={password}
                  onChangeText = {(text) => setPassword(text)}
+                 onSubmitEditing = {signIn}
                 />
             </View>
 
-            <Button containerStyle={styles.button} onPress={sigIn} title="Iniciar Sesión"/>
-            <Button onPress={()=> navigation.navigate('Registro')} 
+            <Button containerStyle={styles.button} onPress={signIn} title="Iniciar Sesión"/>
+            <Button onPress={()=> navigation.navigate('Register')} 
             containerStyle={styles.button} 
             type="outline" 
             title="Registrar"/>
